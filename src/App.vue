@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    just testing
+    <List @delete-member="deleteMember" :members="members" />
+    <Input @add-member="addMember"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import List from "./components/List.vue";
+import Input from "./components/Input.vue";
+import { db } from "./main";
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    name: "app",
+    components: {
+        List,
+        Input
+    },
+    data() {
+        return {
+            members: []
+        };
+    },
+    firestore() {
+        return {
+            members: db.collection("members").orderBy('name')
+        };
+    },
+    methods: {
+        addMember(name, age) {
+            //alert('in addMember Parent');
+            db.collection("members").add({ name, age });
+        },
+        deleteMember(id) {
+            //alert('in deleteMember Parent');
+            db.collection("members").doc(id).delete();
+        }
+    }
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
