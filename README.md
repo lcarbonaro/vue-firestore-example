@@ -21,20 +21,6 @@ Usage Steps:
 
 
 References:
-- [vue-cli Docs](https://github.com/vuejs/vue-cli/blob/dev/docs/README.md)
-- [Materialize CSS](https://materializecss.com/)
-- [VueJS Official Site](https://vuejs.org/)
-- [VueJS By Example from Coursetro](https://coursetro.com/courses/23/Vue-Tutorial-in-2018---Learn-Vue.js-by-Example)
-- [Intro to VueJS from VueMastery](https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance)
-- [VueJS Examples](https://vuejsexamples.net/)
+- [Matt Wong's Firebase Example](https://gitlab.com/matwong/firebase-mississauga-coding)
+- [Google Firestore Docs](https://firebase.google.com/docs/firestore/)
 
-
-
-
-
-draft notes:
-
-
-the usual clone, npm install  etc.
-
-remember to create your own creds.json in project root
