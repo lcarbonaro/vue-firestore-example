@@ -17,10 +17,13 @@ Usage Steps:
 1. git clone https://github.com/lcarbonaro/vue-firestore-example.git
 2. cd vue-firestore-example
 3. npm install
+4. set up a Firestore database in Google Console
+5. create `creds.json` file with your own credentials
 4. npm run serve
 
 
 References:
-- [Matt Wong's Firebase Set-up Notes](https://gitlab.com/matwong/firebase-mississauga-coding)
+- [Article: VueJS with Firestore](https://medium.com/vue-mastery/full-stack-vue-js-with-firestore-62e2fe2ec1f3)
+- [Vuefire on NPM](https://www.npmjs.com/package/vuefire/v/2.0.0-alpha.11)
 - [Google Firestore Docs](https://firebase.google.com/docs/firestore/)
 
