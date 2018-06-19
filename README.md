@@ -3,7 +3,7 @@ VueJS with VueFire and Firestore
 
 This repo builds something similar to [this](https://dist-coznlbzabj.now.sh/) but with data persistence.
 
-This example uses Google Firestore as a database. So you need to set up a project in the Google console and create your own `creds.json` in the project root, something like:
+This example uses Google Firestore as a database back-end. For this you need to set up a project in the [Google console](https://firebase.google.com/docs/firestore/) and create your own `creds.json` file in the project root, something like:
 
 ```
 {
@@ -21,6 +21,6 @@ Usage Steps:
 
 
 References:
-- [Matt Wong's Firebase Example](https://gitlab.com/matwong/firebase-mississauga-coding)
+- [Matt Wong's Firebase Set-up Notes](https://gitlab.com/matwong/firebase-mississauga-coding)
 - [Google Firestore Docs](https://firebase.google.com/docs/firestore/)
 
